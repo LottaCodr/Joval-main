@@ -2,7 +2,7 @@ import { docsConfig } from "@/config/docs";
 import { DocsSidebarNav } from "@/components/sidebar-nav";
 import Topnav from "./components/Topnav";
 import Image from "next/image";
-
+import Link from "next/link";
 
 interface DocsLayoutProps {
   children: React.ReactNode;
@@ -10,24 +10,48 @@ interface DocsLayoutProps {
 
 export default function DocsLayout({ children }: DocsLayoutProps) {
   return (
-    // <div className="border-b container flex items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-4 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-2  ">
     <div className=" ">
       {" "}
-     <Topnav />
-      <div className="  ">
-      <main className=" flex justify-center sticky">
-        <div className="   mb-10 sticky  pl-10 pt-10 h-full w-[300px] border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-         <aside> <DocsSidebarNav items={docsConfig.sideNav} /> 
+      {/* Side Bar */}
+      <div className=" flex ">
+        <div className=" w-72  fixed top-0 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <Link href="/users">
+            <div className="ml-5 mt-10 flex   justify-start items-center gap-3">
+              <Image
+                src="/favicon.png"
+                alt="logo"
+                width={50}
+                height={50}
+                className=""
+              />
+
+              <Image
+                src="/jkc2.png"
+                width={100}
+                height={100}
+                alt="logo"
+                className="   "
+              />
+            </div>
+          </Link>
+          <DocsSidebarNav items={docsConfig.sideNav} />
+
           {/* Hamburger Menu */}
-        <Image
-          src="menu.svg"
-          alt="menu"
-          width={32}
-          height={32}
-          className=" cursor-pointer lg:hidden"
-        /></aside>
+          <Image
+            src="menu.svg"
+            alt="menu"
+            width={32}
+            height={32}
+            className=" cursor-pointer lg:hidden"
+          />
         </div>
-        {children}</main>
+        <main className="ml-[350px] w-screen">
+          <div className="mb-[170px]">
+            {" "}
+            <Topnav />
+          </div>
+          {children}
+        </main>
       </div>
     </div>
   );

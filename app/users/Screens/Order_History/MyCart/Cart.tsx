@@ -33,7 +33,7 @@ const handleRemove = () => {
 
 
   return (
-    <section className="flex ml-16 justify-start items-start">
+    <section className="flex  justify-start items-start">
       <div className="">
       <Separator className="" />
         <div className=" p-5 ">

@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 
 const MyOrders = () => {
   return (
-    <div className=" ml-16 w-[1250px] justify-start items-start">
+    <div className="  w-[1250px] justify-start items-start">
       <Separator />
       <div className=" text-4xl font-bold text-white mb-4 pl-4  h-[60px] p-4 rounded-t-lg">
         My Orders

@@ -8,8 +8,12 @@ import {
 } from "@/components/page-header"
 import { Announcement } from "@/components/announcement"
 import { buttonVariants } from "@/components/ui/button"
+import { ContextProvider } from "./contexts/ContextProvider"
+
+
 export default function IndexPage() {
   return (
+    <ContextProvider>
     <div className="container relative">
       <PageHeader>
         <Announcement />
@@ -26,5 +30,6 @@ export default function IndexPage() {
       </PageHeader>
       
     </div>
+    </ContextProvider>
   )
 }

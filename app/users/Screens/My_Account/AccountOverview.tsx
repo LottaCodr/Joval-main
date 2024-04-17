@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 
 const AccountOverview = () => {
   return (
-    <div className="ml-16 justify-center items-center ">
+    <div className=" justify-center items-center ">
       <Separator />
 
       <h2 className="text-4xl font-bold text-white mb-4 pl-4  h-[60px] p-4 rounded-t-lg">

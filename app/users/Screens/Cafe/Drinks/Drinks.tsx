@@ -25,7 +25,7 @@ const Drinks = () => {
         <Separator />
 
 
-        <div className="grid  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5  pt-4 gap-0 ">
+        <div className="grid   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  w-screen pt-4  gap-10 lg:gap-0 md:gap-5  ">
           {FEATURED_ITEMS.map((item) => (
             <CardItems
               // key={item.id} // Crucial for React optimization

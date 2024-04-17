@@ -8,11 +8,11 @@ import { Separator } from "@/components/ui/separator";
 
 const Meals = () => {
   return (
-    <section className=" ml-16 justify-center items-center ">
+    <section className="  justify-center items-center overflow-auto">
       {/* Category Navigation */}
       <div className=" mb-8">
         
-        <div className="container flex w-screen sm:w-auto hover:text-white items-center">
+        <div className=" justify-center flex w-auto sm:w-auto hover:text-white items-center">
           {KITCHEN_CATEGORIES.map((category, index) => (
             <Categories key={index} category={category} />
           ))}
@@ -23,7 +23,7 @@ const Meals = () => {
       <Separator />
         <h2 className="text-4xl font-bold text-white mb-4 pl-4  h-[60px] p-4 rounded-t-lg">Meals</h2>
         <Separator />
-        <div className="grid  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5  pt-4 gap-0 ">
+        <div className="grid   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  w-screen pt-4  gap-10 lg:gap-0 md:gap-5 ">
           {FEATURED_ITEMS.map((item) => (
             <CardItems
               // key={item.id} // Crucial for React optimization

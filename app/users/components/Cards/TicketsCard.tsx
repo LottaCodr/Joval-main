@@ -6,8 +6,8 @@ const TicketsCard = () => {
 
 
   return (
-    <div className="bg-black rounded-xl mt-10">
-      <div className="w-[650px] pl-10 pt-10  h-full">
+    <div className="bg-black rounded-xl mt-10 mb-10">
+      <div className=" pl-10 pt-10  h-full">
         <div className="flex justify-between items-center mb-5">
           <h1 className="text-4xl font-bold">Order Confirmation</h1>
           <Image
@@ -15,18 +15,18 @@ const TicketsCard = () => {
             width={70}
             height={70}
             alt="qrcode"
-            className=" object-contain p-5 object-top "
+            className=" relative object-contain p-5 object-top "
           />
         </div>
       </div>
 
       <Separator />
 
-      <p className="pl-10 pt-10 pr-10 text-lg">
+      <p className="pl-10 pt-10 pr-10 text-xl">
         Lotanna! Thank you for your order in our online sports center.
       </p>
 
-      <div className="flex flex-grow">
+      <div className="flex flex-grow justify-between">
         <div className="p-10 text-xl text-center justify-center">
           <p className="text-gray-400">Order Number:</p>
           <p className="text-xl font-bold">980730977040</p>
