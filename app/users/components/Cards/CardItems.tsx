@@ -25,8 +25,8 @@ const getInfoFromScreen = () => {
 };
 
   return (
-    <div className=" py-5 hover:scale-110 transition duration-300 ease-in-out">
-      <Card className="rounded-lg shadow-md overflow-hidden lg:w-[400px] md:w-[350px] sm:w-[300px] h-[450px]">
+    <div className="   hover:scale-110 transition duration-300 ease-in-out">
+      <Card className=" rounded-lg shadow-md overflow-hidden lg:w-[400px] md:w-[350px] sm:w-[300px] h-[450px]">
         <CardContent className="relative h-48 bg-gray-100 group-hover:bg-gray-200">
           <Image
             src={image}
