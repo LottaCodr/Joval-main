@@ -16,7 +16,7 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
   const activeMenu = true;
 
   return items.length ? (
-    <div className="overflow-y-auto mt-10 ml-5 h-screen overflow-auto md:overflow-hidden md:hover:overflow-auto pb-10">
+    <div className=" mt-10 ml-5 h-screen overflow-auto md:overflow-hidden md:hover:overflow-auto pb-10">
 
       
       {items.map((item, index) => (
@@ -24,7 +24,7 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
           key={index}
           className={cn("pb-4 gap-3 ")}
         >
-          <p className="m-3 mt-4 uppercase font-bold text-gray-500   ">{item.title}</p>
+          <p className="m-3 mt-4 uppercase text-md font-bold text-gray-500   ">{item.title}</p>
 
           {item?.items?.length && (
             <p className="">
@@ -47,7 +47,7 @@ export function DocsSidebarNavItems({
   pathname,
 }: DocsSidebarNavItemsProps) {
   return items?.length ? (
-    <div className="grid justify-start items-start h-full sticky grid-flow-row auto-rows-max text-sm">
+    <div className="grid justify-start items-start h-full  grid-flow-row text-sm">
       
       {items.map((item, index) =>
         item.href && !item.disabled ? (
@@ -59,14 +59,14 @@ export function DocsSidebarNavItems({
               item.disabled && "cursor-not-allowed opacity-60",
               pathname === item.href
                 ? "dark:bg-red-800 bg-red-500 hover:text-white   text-white dark:hover:bg-red-800 hover:bg-red-800 "
-                : " hover:text-white text-xl hover:bg-red-800 "
+                : " hover:text-white text-md hover:bg-red-800 "
             )}
             target={item.external ? "_blank" : ""}
             rel={item.external ? "noreferrer" : ""}
           >
             {/* {item.title} */}
             {item.title && (
-              <span className=" bg-transparent w-screen h-full rounded-md  px-1.5 py-0.5 text-lg hover:scale-100 transition duration-300 ease-in-out text-white  text-muted-foreground no-underline group-hover:no-underline">
+              <span className=" bg-transparent w-screen h-full rounded-md  px-1.5 py-0.5 text-md hover:scale-100 transition duration-300 ease-in-out text-white  text-muted-foreground no-underline group-hover:no-underline">
                 {item.title}
               </span>
             )}

@@ -10,12 +10,11 @@ interface DocsLayoutProps {
 
 export default function DocsLayout({ children }: DocsLayoutProps) {
   return (
-    <div className=" ">
-      {" "}
-      {/* Side Bar */}
-      <div className=" flex">
+    
+      // {/* Side Bar */}
+      <div className="">
         <div
-          className=" w-72  fixed top-0 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+          className=" w-72  fixed top-0 border-b border-border/40 bg-background/95 backdrop-blur "
           style={{ zIndex: 1000 }}
         >
           <Link href="/users">
@@ -38,23 +37,16 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
             </div>
           </Link>
           <DocsSidebarNav items={docsConfig.sideNav} />
-
-          {/* Hamburger Menu */}
-          <Image
-            src="menu.svg"
-            alt="menu"
-            width={32}
-            height={32}
-            className=" cursor-pointer lg:hidden"
-          />
         </div>
         <div className="   ">
           {" "}
           <Topnav />
         </div>
-        <main className=" ml-[305px]  mt-28">{children}</main>
+        <main className=" px-5 ml-80 overflow-hidden mt-28">
+          {children}
+        </main>
       </div>
-    </div>
+    
   );
 }
 

@@ -5,16 +5,16 @@ import { FEATURED_ITEMS } from "@/config/items";
 
 const FeaturedItemsScreen = () => {
   return (
-    <div className="">
+    <div className=" w-auto  ">
       
         {/* Featured Section */}
         <Separator />
-        <section className="  mb-12   ">
-          <h1 className="text-3xl w-screen font-bold text-white mb-4 pl-4  h-[60px] p-4 rounded-t-lg">
+        <section className="  mb-12  justify-start  ">
+          <h1 className="text-3xl w-screen font-bold text-white mb-4 pl-4  h-[60px] p-4 ">
             Featured Items
           </h1>
           <Separator />
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   pt-4 lg:gap-7 md:gap-5  ">
+          <div className=" grid grid-cols-4 gap-4  pt-4 lg:gap-7 md:gap-5  ">
             {FEATURED_ITEMS.map((features) => (
               <CardItems
                 // key={features.id} {/* Crucial for React optimization */}
