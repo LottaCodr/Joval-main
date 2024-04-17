@@ -7,7 +7,6 @@ const FeaturedItemsScreen = () => {
   return (
     <>
       
-      <div className=" justify-center items-center  ">
         {/* Featured Section */}
         <Separator />
         <section className="  mb-12  ">
@@ -41,7 +40,9 @@ const FeaturedItemsScreen = () => {
                 // key={features.id} {/* Crucial for React optimization */}
                 price={features.price}
                 itemName={features.itemDescription}
-                image={features.img} buttonName={"ADD TO CART"}              />
+                image={features.img}
+                buttonName={"ADD TO CART"}
+              />
             ))}
           </div>
         </section>
@@ -60,7 +61,9 @@ const FeaturedItemsScreen = () => {
                 // key={features.id} {/* Crucial for React optimization */}
                 price={features.price}
                 itemName={features.itemDescription}
-                image={features.img} buttonName={"ADD TO CART"}              />
+                image={features.img}
+                buttonName={"ADD TO CART"}
+              />
             ))}
           </div>
         </section>
@@ -79,12 +82,13 @@ const FeaturedItemsScreen = () => {
                 // key={features.id} {/* Crucial for React optimization */}
                 price={features.price}
                 itemName={features.itemDescription}
-                image={features.img} buttonName={"ADD TO CART"}
+                image={features.img}
+                buttonName={"ADD TO CART"}
               />
             ))}
           </div>
         </section>
-      </div>
+      
     </>
   );
 };

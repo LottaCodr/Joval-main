@@ -16,7 +16,7 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
   const activeMenu = true;
 
   return items.length ? (
-    <div className=" mt-10 ml-5 h-screen overflow-auto md:overflow-hidden md:hover:overflow-auto pb-10">
+    <div className="overflow-y-auto mt-10 ml-5 h-screen overflow-auto md:overflow-hidden md:hover:overflow-auto pb-10">
 
       
       {items.map((item, index) => (

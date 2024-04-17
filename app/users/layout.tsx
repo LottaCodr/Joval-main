@@ -13,8 +13,11 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
     <div className=" ">
       {" "}
       {/* Side Bar */}
-      <div className=" flex ">
-        <div className=" w-72  fixed top-0 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className=" flex">
+        <div
+          className=" w-72  fixed top-0 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+          style={{ zIndex: 1000 }}
+        >
           <Link href="/users">
             <div className="ml-5 mt-10 flex   justify-start items-center gap-3">
               <Image
@@ -22,7 +25,7 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
                 alt="logo"
                 width={50}
                 height={50}
-                className=""
+                className="object-top"
               />
 
               <Image
@@ -45,13 +48,11 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
             className=" cursor-pointer lg:hidden"
           />
         </div>
-        <main className="ml-[350px] w-screen">
-          <div className="mb-[170px]">
-            {" "}
-            <Topnav />
-          </div>
-          {children}
-        </main>
+        <div className="   ">
+          {" "}
+          <Topnav />
+        </div>
+        <main className="  overflow-hidden ml-28  mt-28">{children}</main>
       </div>
     </div>
   );
