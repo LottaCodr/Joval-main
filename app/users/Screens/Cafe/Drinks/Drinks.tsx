@@ -7,7 +7,7 @@ import Categories from "../../../components/Categories";
 const Drinks = () => {
   return (
     <>
-     <section className=" justify-center items-center  ">
+     <section className=" w-auto justify-center  ">
       {/* Category Navigation */}
       <div className="mb-8">
         <div className=" container flex w-screen sm:w-auto justify-center   ">
@@ -25,7 +25,7 @@ const Drinks = () => {
         <Separator />
 
 
-        <div className="grid   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  w-screen pt-4  gap-10 lg:gap-0 md:gap-5  ">
+        <div className="grid grid-cols-4 gap-4  pt-4 lg:gap-7 md:gap-5  ">
           {FEATURED_ITEMS.map((item) => (
             <CardItems
               // key={item.id} // Crucial for React optimization

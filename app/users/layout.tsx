@@ -42,7 +42,7 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
           {" "}
           <Topnav />
         </div>
-        <main className=" px-5 ml-80 overflow-hidden mt-28">
+        <main className=" px-5 ml-80 overflow-hidden mt-32">
           {children}
         </main>
       </div>

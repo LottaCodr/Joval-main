@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 
 const Meals = () => {
   return (
-    <section className="  justify-center items-center overflow-auto">
+    <section className=" w-auto mb-5 ">
       {/* Category Navigation */}
       <div className=" mb-8">
         
@@ -23,7 +23,7 @@ const Meals = () => {
       <Separator />
         <h2 className="text-4xl font-bold text-white mb-4 pl-4  h-[60px] p-4 rounded-t-lg">Meals</h2>
         <Separator />
-        <div className="grid   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  w-screen pt-4  gap-10 lg:gap-0 md:gap-5 ">
+        <div className="grid lg:grid-cols-4  gap-4  pt-4 lg:gap-7 md:gap-5  ">
           {FEATURED_ITEMS.map((item) => (
             <CardItems
               // key={item.id} // Crucial for React optimization
